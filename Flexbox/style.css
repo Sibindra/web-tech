@@ -1,0 +1,51 @@
+.container{
+    height: 344px;
+    width: 100%;
+    border: 1px solid black;
+
+    /* flexbox */
+    display: flex;
+    flex-direction: row/column/row-reverse/column-reverse;
+    flex-wrap: nowrap/wrap/wrap-reverse;
+
+    /* position content horizontally */
+    justify-content: center; /*positions content at the center HORIZONTALLY*/
+    justify-content: space-between/space-around/space-evenly; /*adds equal space between content*/
+
+    /* position content vertically */
+    align-items: center; /*postions content at the center VERTICALLY*/
+    align-items: flex-start; /*positions at the top vertically */
+    align-items: flex-end;/*positions at the bottom vertically */
+    
+    /* streching for different screen size wrap must be enabled */
+    align-items: stretch;
+
+}
+
+.item{
+    background-color: tomato;
+    border: 2px solid green;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+
+}
+
+#item1{
+
+    /* highest order xontent will be pushed to the end */
+    order: 2;
+
+    /* content with higer flex-groe value grows/enlarges with change in screen size */
+    flex-grow: 2;
+
+    /* negative value is invalid so it makes flex-shrik shrinks the content with change in screen size */
+    flex-shrink: 2;
+
+    /* provide size to a particular content  */
+    flex-basis: 120px; /*controls the width of content when flex-direction is set to row*/
+
+    /* aligns to the content to start or end of the flexbox */
+    align-self: flex-start/flex-end/center;
+}

@@ -1,0 +1,51 @@
+<!--html code  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h3>Visit Nepal</h3>
+        <p>Please enter your details to tarvel to Nepal right away!</p>
+        <!-- submit messege -->
+        <?php
+            if($submit == true){
+                echo "<p id='submit_messege'>Thank you for submitting the form.We will contact you very soon!</p>";
+            }
+        ?>
+
+        <!-- form  -->
+        <form action="index.php" method="POST">
+
+            <!-- name -->
+            <input type="text" name="username" placeholder="Username" class="box">
+            <!-- age -->
+            <input type="text" name="userage" placeholder="Age" class="box">
+            <!-- gender -->
+            <input type="text" name="usergender" placeholder="Gender" class="box">
+            <!-- email -->
+            <input type="email" name="useremail" placeholder="Email address" class="box">
+            <!-- phone no -->
+            <input type="phone" name="userphone" placeholder="Phone no" class="box">
+            <!-- more information -->
+            <textarea name="moreinfo" id="text-box" cols="30" rows="10" placeholder="more information"></textarea>
+
+            <!-- submit button -->
+            <input type="submit" name="submit" class="buttons" value="submit">
+            <!-- reset button -->
+            <input type="reset" name="reset" class="buttons" value="reset">
+
+        </form>
+    </div>
+</body>
+
+</html>

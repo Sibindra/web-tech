@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="#" />
+</head>
+
+<body>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+
+    <!-- scoreboard -->
+    <div class="score-board">
+        <!--badge User-->
+        <div class="badge" id="user">User</div>
+
+        <!-- scores -->
+        <span id="score-user">0</span>:<span id="score-computer">0</span>
+
+        <!-- badge Computer -->
+        <div class="badge" id="computer">Computer</div>
+
+    </div>
+
+    <!-- result of the move -->
+    <div class="result">
+        <p id="result">Click on your choice!</p>
+    </div>
+
+    <!-- user choice for rock-paper-scissors -->
+    <div class="input">
+        <!-- Each choice has a div of it's own -->
+        <div class="choice" id="rock">
+            <img src="images/rock.png" alt="rock">
+            <p class="description">Rock</p>
+        </div>
+
+        <div class="choice" id="paper">
+            <img src="images/paper.png" alt="paper">
+            <p class="description">Paper</p>
+        </div>
+
+        <div class="choice" id="scissors">
+            <img src="images/scissors.png" alt="scissors">
+            <p class="description">Scissors</p>
+        </div>
+    </div>
+
+    <p class="messege">Make your move!</p>
+
+    <!-- js link -->
+    <script src="script.js"></script>
+</body>
+
+</html>

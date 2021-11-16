@@ -1,0 +1,179 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('images/background.jpg');
+    background-size: cover;   
+    color: white;
+    font-family: Ubuntu;
+    font-weight: bolder;
+}
+
+.left{
+    /* border:1px solid red; */
+    display: inline-block;
+    position:absolute;
+    top: 20px;
+    left: 10px;
+}
+
+.right{
+    /* border:1px solid green; */
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    text-align: center;
+}
+
+.mid{
+    /* border: 1px solid yellow; */
+
+    /* for setting in middle position */
+    display: block;
+    width: 86%;
+    margin: 20px auto;
+}
+
+li{
+    display: inline-block;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    padding: 0px 19px;
+    font-size: 17px;
+}
+
+a:hover{
+    color: grey;
+    text-decoration: underline;
+}
+
+.logo{
+    width: 64px;
+    margin:-8px 35px;
+    /* in case to convert from black to white and vice versa  */
+    /* filter: invert(100%)*/
+}
+
+.mail{
+    width:50px;
+    filter: invert(100%);
+}
+
+.mail:hover{
+    width:55px;
+}
+
+.container{
+    border:2px solid white;
+    border-radius: 20px;
+    position: absolute;
+    top:18%;
+    left:5%;
+    padding: 154px 128px;
+    text-align: center;
+    line-height: 80px;
+}
+
+
+.button{
+    border-radius: 100px;
+    padding: 12px 34px;
+    font-family: Ubuntu;
+    color: white;
+    background-color: black;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.button:hover{
+    background-color: white;
+    color: black;
+}
+
+.box{
+    padding: 12px 10px;
+    border-radius: 100px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Ubuntu;
+    font-weight: bolder;
+}
+
+::placeholder{
+    text-align: center;
+    color: grey;
+    font-size: 15px;
+}
+
+@media screen and (max-width:1100px) and (min-width:520px){
+    .logo{
+        margin: 8px 0px;
+        width: 39px;
+    }
+
+    ul{
+        padding: 8px 10px;
+    }
+
+    .container{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 94px;
+    }
+
+    body{
+        background: url(images/phone.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .mail{
+        width: 41px;
+        margin: 7px -7px;
+    }    
+}
+
+@media screen and (max-width:520px){
+    header{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    body{
+        background-image: url(images/phone.jpg);
+    }
+
+    .logo{
+        width: 74px;
+        margin: 0px 0px;
+    }
+
+    ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 80px;
+        padding: 10px;
+
+    }
+
+    a{
+        padding: 0px 4px;
+    }
+
+    .container{
+        padding: 168px 26px;
+        margin: 0px;
+    }
+
+    .mid{
+        margin: 2px auto;
+    }
+
+}

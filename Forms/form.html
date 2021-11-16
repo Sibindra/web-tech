@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is an test html doc">
+        <meta name="keywords" content="html,css,forms">
+        <meta name="robot" content="INDEX,FOLLOW">
+
+        <title>forms</title>
+    </head>
+
+
+    <body>
+        <!-- html form -->
+        <form action="form.php" method="GET|POST" target="_blank">
+
+            <!-- input tags -->
+            Name:<input type="text" name="username" id="username"><br>
+            Email:<input type="email" name="email" id="email"><br>
+            Password:<input type="password" name="password" id="password"><br>
+
+            <!-- radio tags -->
+            Gender:
+            <input type="radio" name="gender" value="male">Male 
+            <input type="radio" name="gender" value="female">Female 
+            <input type="radio" name="gender" value="other">Other <br>
+            
+            <!-- checkbox tags -->
+            <br>Subjects:
+            <input type="checkbox" name="subject" value="Maths">Maths 
+            <input type="checkbox" name="subject" value="English">English
+            <input type="checkbox" name="subject" value="Nepali">Nepali
+
+            <!-- select tags -->
+            <br>Nationaliy:
+            <select name="nationality" id="nationality">
+                <option value="nepal" selected>Nepal</option>                
+                <option value="india">India</option>
+                <option value="bhutan">Bhutan</option>
+                <option value="bangladesh">Bangladesh</option>
+                <option value="pakistan">Pakistan</option>
+                <option value="sri-lanka">Sri-Lanka</option>
+                <option value="maldives">Maldives</option>
+            </select>
+
+            <!-- submit and reset tags -->
+            <br><br><input type="submit" value="submit">
+            <input type="reset" value="reset">
+
+        </form>
+    </body>
+</html>

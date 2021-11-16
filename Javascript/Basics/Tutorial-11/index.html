@@ -1,0 +1,93 @@
+<!-- issues on js -->
+<!-- sum total not working-->
+<!-- t1 an d t2 blur -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tut-11</title>
+
+    <!-- css style -->
+    <style>
+
+        *{
+            font-family: Fira Sans;
+        }
+
+        #a{
+            text-align: center;
+        }
+
+        table,th,td{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+
+        <tr>
+           <th>Item</th>
+           <th>Qty</th>
+           <th>Rate</th>
+           <th>Total Price</th> 
+        </tr>
+
+        <tr>
+           <td>Laptop</td>
+           <td><input type="text" id="q1"></td>
+           <td>Rs.1,00,000</td>
+           <td><input type="text" id="t1"></td> 
+        </tr>
+
+
+        <tr>
+            <td>Mobile</td>
+            <td><input type="text" id="q2"></td>
+            <td>Rs.50,000</td>
+            <td><input type="text" id="t2"></td>
+        </tr>
+
+        <tr>
+            <td colspan="3" id="a"><button id="btn">Total</button></td>
+            <td><input type="text" id="total"></td>
+        </tr>
+    </table>
+
+    <!-- javascript -->
+    <script>
+
+        // first row
+        document.getElementById('q1').onblur=action1;
+        
+        function action1(){
+            var q1=document.getElementById('q1').value;
+            var t1=q1*100000;
+            document.getElementById('t1').value=t1;
+        }
+
+        // second row
+        document.getElementById('q2').onblur=action2;
+
+        function action2(){
+            var q2=document.getElementById('q2').value;
+            var t2=q2*50000;
+            document.getElementById('t2').value=t2;
+        }
+        
+        // third row
+        document.getElementById('btn').onclick=action3;
+
+        function action3(){
+           document.getElementById('total').value=(t1+t2)
+        }
+    </script>
+</body>
+
+</html>

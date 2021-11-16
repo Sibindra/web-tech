@@ -1,0 +1,45 @@
+/* Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+.container{
+    border: 1px solid red;
+    max-width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    padding: 30px;
+}
+
+/* input types */
+.box,#text-box{
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+    margin: 22px;
+    padding: 7px;
+    width: 302px;
+    border: 1px solid #999595;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.buttons{
+    margin:0px 63px;
+    padding: 2px;
+    text-align: center;
+    border: 1px solid #999595;
+    border-radius: 5px;
+}
+
+#submit_messege{
+    color: red;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- meta tags -->
+        <meta charset="UTF-8">
+        <meta name="description" content="this is an test webpage.">
+        <meta name="keyword" content="html,form,test,table">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="robot" content="FINDEX,FOLLOW">
+
+        <!-- title tag -->
+        <title>Log in.</title>
+    </head>
+
+    <body>
+        <!-- heading -->
+        <h1>Log in</h1>
+
+        <!-- form tag  -->
+        <form action="login.py" method="GET|POST" target="_blank">
+            <!--login.py does not exist here-->
+
+            <!-- table for form -->
+            <table border="1">
+
+                <!-- username -->
+                <tr>
+                    <th>Name:</th>
+                    <td>
+                        <input type="text" name="username">
+                    </td>
+                </tr>
+
+                <!-- address -->
+                <tr>
+                    <th>Address:</th>
+                    <td>
+                        <input type="text" name="address">
+                    </td>
+                </tr>
+
+                <!-- email -->
+                <tr>
+                    <th>Email:</th>
+                    <td>
+                        <input type="email" name="email">
+                    </td>
+                </tr>
+
+                <!-- password -->
+                <tr>
+                    <th>Password:</th>
+                    <td>
+                        <input type="password" name="password">
+                    </td>
+                </tr>
+
+                <!-- subject checkbox -->
+                <tr>
+                    <th>Subject:</th>
+                    <td>
+                        <input type="checkbox" name="subject" value="Maths">Maths
+                        <input type="checkbox" name="subject" value="Science">Science
+                        <input type="checkbox" name="subject" value="English">English
+                    </td>
+                </tr>
+
+                <!-- gender checkbox-->
+                <tr>
+                    <th>Gender:</th>
+                    <td>
+                        <input type="radio" name="gender" value="male">Male
+                        <input type="radio" name="gender" value="female">Female
+                        <input type="radio" name="gender" value="other">Other
+                    </td>
+                </tr>
+
+                <!-- nationality -->
+                <th>Nationaliy:</th>
+                <td>
+                    <select name="nationality">
+                        <option value="Nepal" selected>Nepal</option>
+                        <option value="India">India</option>
+                        <option value="bhutan">Bhutan</option>
+                        <option value="bangladesh">Bangladesh</option>
+                        <option value="pakistan">Pakistan</option>
+                        <option value="sri-lanka">Sri-Lanka</option>
+                        <option value="maldives">Maldives</option>
+                    </select>
+                </td>
+
+            </table>
+
+
+
+            <!-- submit and reset buttons -->
+            <br><br>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+
+        </form>
+
+    </body>
+
+</html>
